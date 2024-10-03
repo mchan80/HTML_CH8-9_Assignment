@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML: Forms</title>
+  </head>
+  <body>
+    <div style="border: 2px solid purple">
+      <h1>Hi, Welcome to WVC</h1>
+      <p>Log in first to get the best use out of this site:</p>
+      <form action="">
+        <p>
+          Username:
+          <input
+            type="text"
+            name="username"
+            maxlength="20"
+            placeholder="Username"
+          />
+        </p>
+        <p>
+          Password:
+          <input
+            type="password"
+            name="password"
+            maxlength="20"
+            placeholder="Password"
+            required="required"
+          />
+        </p>
+        <button>Log in</button>
+      </form>
+    </div>
+    <p>
+      After you've logged in, <a href="video.html">CLICK HERE</a> to watch a
+      video or listen to some music!
+    </p>
+    <img
+      src="images/collegeCampus.jpg"
+      alt="Building on college campus"
+      height="600"
+      width="450"
+      style="border: 2px solid orange"
+    />
+    <div style="border: 2px solid green">
+      <h2>About the School</h2>
+      <p>
+        We are the best at what we do! From the arts to the sciences, we've got
+        you covered. Here you will find all the information you need:
+      </p>
+      <ul>
+        <li>Course list</li>
+        <li>How to sign up for classes</li>
+        <li>Resource centers</li>
+        <li>Faculty list</li>
+        <li>Campus map</li>
+      </ul>
+    </div>
+    <iframe width="450" height="350" src="https://maps.google.co.uk/maps?q=west+valley+saratoga&amp;output=embed"></iframe>
+		</iframe>
+    <div style="border: 2px solid pink;">
+      <p>
+        Still need more information? No worries! Feel free to use our search bar
+        below!
+      </p>
+      <form action="">
+        <input type="search" name="search" placeholder="Enter keyword" />
+        <button>Search</button>
+      </form>
+    </div>
+    <div style="border: 2px solid red;">
+      <h2>Join Our Mailing List!</h2>
+      <p>
+        If you join our mailing list, you will get exclusive information regarding
+        upcoming events, assignments, and well... more events! Be the first to be
+        “in the know”. We promise not to spam you. <em>Really</em>.
+      </p>
+      <form action="">
+        <input type="email" name="email" />
+        <button>Join</button>
+      </form>
+    </div>
+    <div style="border: 2px solid blue;">
+      <form action="">
+        <p>
+          What kind of music applications do you like using while studying or on
+          the go? You can choose more than one music streaming application: <br />
+          <label
+            ><input type="checkbox" name="app" value="spotify" />Spotify</label><br />
+          <label
+            ><input type="checkbox" name="app" value="apple" />Apple Music</label><br />
+          <label>
+            <input type="checkbox" name="app" value="youtube" />YouTube Music</label><br />
+          <label>
+            <input type="checkbox" name="app" value="pandora" />Pandora</label><br />
+          <label>
+            <input type="checkbox" name="app" value="amazon" />Amazon Music</label>
+        </p>
+      </form>
+    </div>
+    <div style="border: 2px solid black;">
+      <form action="">
+        <p>
+          Favorite style of music? <br />
+          <input type="radio" name="style" value="rock" checked="checked" /> Rock
+          <input type="radio" name="style" value="pop" /> Pop
+          <input type="radio" name="style" value="jazz" /> Jazz
+        </p>
+      </form>
+    </div>
+    <div style="border: 2px solid orange;">
+      <form action="">
+        <p>
+          Are you a MacOS, Windows, or Linux user? <br />
+          <select name="os">
+            <option value="mac">MacOS</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+          </select>
+        </p>
+      </form>
+    </div>
+    <div style="border: 2px solid purple;">
+      <h2>Add an image for your profile!</h2>
+      <form action="">
+        <img
+          src="images/profilePic.jpg"
+          alt="Smiling college student"
+          height="600"
+          width="600"
+        />
+        <br />
+        <input type="file" name="profile-pic" /> <br />
+        <button>Upload</button>
+      </form>
+    </div>
+    <h2>Contact?</h2>
+    <p>Please use the form below:</p>
+    <form action="">
+      <p>
+        <label
+          >First Name: <br />
+          <input type="text" name="firstName" /></label
+        ><br />
+        <label
+          >Last Name: <br />
+          <input type="text" name="lastName" /></label
+        ><br />
+        <label
+          >Email: <br />
+          <input type="email" name="email"
+        /></label>
+      </p>
+      <p>Set a date when you can visit the campus!</p>
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date"/>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
